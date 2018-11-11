@@ -1,3 +1,6 @@
+@import "../../scss/models/screen";
+
+
 header {
   background-color: #fff;
   border-bottom: 2px solid #efefef;
@@ -12,8 +15,13 @@ header {
   }
 
   .header-title {
+    font-size: 18px;
     position: relative;
     top: 5px;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 24px;
+    }
   }
 
   .header-title-copy {
