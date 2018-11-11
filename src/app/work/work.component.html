@@ -1,0 +1,23 @@
+<section id="work" class="work-section">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let site of sites" class="work-col col-sm-12 col-lg-6">
+        <div class="work-block {{site.blockClass}}">
+          <h3>{{site.title}}</h3>
+
+          <a href="{{site.url}}" target="_blank">
+            <div class="work-thumbnail" [ngStyle]="{'background-image': 'url(\'' + site.thumbnail + '\')'}"></div>
+          </a>
+
+          <div class="work-tags">
+            <div *ngFor="let tag of site.tags" class="badge badge-light">{{tag}}</div>
+          </div>
+
+          <div class="work-footer">
+            <a href="{{site.url}}" target="_blank">Visit {{site.linkCopy}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

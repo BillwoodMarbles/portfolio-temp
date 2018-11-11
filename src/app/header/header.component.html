@@ -1,0 +1,24 @@
+<header>
+  <nav class="navbar navbar-light navbar-expand justify-content-between">
+    <a class="navbar-brand" href="https://harrisonwallin.com" target="_blank">
+      <img src="/assets/img/logo.svg" class="logo" alt="Harrison Reed Wallin">
+      <span class="header-title">
+        <span class="header-title-copy" [ngClass]="{active: title === 'harrison', hidden: title !== 'harrison'}">
+          Harrison Reed Wallin
+        </span>
+        <span class="header-title-copy" [ngClass]="{active: title === 'engineer', hidden: title !== 'engineer'}">
+          Frontend Engineer
+        </span>
+      </span>
+    </a>
+
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="https://github.com/BillwoodMarbles" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://www.linkedin.com/in/harrisonwallin/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </nav>
+</header>

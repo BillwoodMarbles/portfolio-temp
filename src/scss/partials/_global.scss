@@ -1,0 +1,18 @@
+html,
+body {
+  color: $brand-secondary;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', Futura, sans-serif;
+  font-size: 18px;
+}
+
+@include keyframes(come-in-bottom) {
+  from {bottom: -17px; opacity: 0;}
+  to {bottom: 0; opacity: 1}
+}
+
+@include keyframes(leave-top) {
+  from {bottom: 0; opacity: 1;}
+  to {bottom: 17px; opacity: 0}
+}
